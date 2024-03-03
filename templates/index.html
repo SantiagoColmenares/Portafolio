@@ -1,0 +1,36 @@
+{% extends "layouts/app.html" %}
+{% load static %}
+{% block title %}
+Inicio
+{% endblock %}
+
+
+{% block content %}
+
+<section class="contenido">
+  <div class="contenido__persona">
+    <div class="imagen">
+      <img src="{% static 'images/foto.jpg' %}" class="imagen__persona">
+    </div>
+    <div class="datos">
+      <div class="personales">
+        <h4 class="titulo__personales">Datos personales</h4>
+        <p class="parrafo__personales">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint temporibus
+          quam molestiae nostrum porro in, odit ratione itaque quaerat possimus!
+        </p>
+      </div>
+      <div class="contacto">
+        <h4 class="titulo__contacto">Datos de contacto</h4>
+        <p class="datos__contacto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint temporibus
+          quam molestiae nostrum porro in, odit ratione itaque quaerat possimus!
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+{% endblock %}

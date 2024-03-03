@@ -1,0 +1,26 @@
+{% extends "layouts/app.html" %}
+{% load static %}
+{% block title %}
+Portafolio
+{% endblock %}
+
+
+{% block content %}
+
+<section class="portafolio">
+  <h1 class="titulo__portafolio">
+    Portafolio
+  </h1>
+  <div class="images">
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-1.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-2.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-3.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-4.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-5.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-6.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-7.jpg' %}" class="imagenes__portafolio"></a>
+    <a href="{% url "contacto" %}"><img src="{% static 'images/img-8.jpg' %}" class="imagenes__portafolio"></a>
+  </div>
+</section>
+
+{% endblock %}
