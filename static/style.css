@@ -3,7 +3,8 @@
   --bg-header:#9BB0C1;
   --bg-footer:#9BB0C1;
   --text-color-menu:#35374B;
-  --text-color-footer:#F6995C;
+  --text-color-footer:#35374B;
+  --link-active:#d47113;
   --footer:80px;
 }
 @font-face {
@@ -53,10 +54,7 @@ header{
 }
 
 .menu__link:hover{
-  border: 1px solid #35374B;
-  border-radius:12px;
-  padding: 5px;
-  transition: .4s;
+  color: var(--link-active);
 }
 
 
@@ -81,13 +79,14 @@ Estilos inicio
 }
 
 .imagen__persona{
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 15% 5%;
 }
 
 .datos{
   margin-left: 250px;
+  width: 500px;
 }
 
 .personales{
@@ -105,6 +104,14 @@ Estilos inicio
   margin-top: 26px;
 }
 
+.titulo__personales{
+  font-size: 2rem;
+}
+
+.titulo__contacto{
+  font-size: 2rem;
+}
+
 /* 
 
 Estilos portafolio
@@ -119,6 +126,7 @@ Estilos portafolio
 
 .titulo__portafolio {
   text-align: center;
+  padding-top: 25px;
 }
 
 .images {
@@ -143,9 +151,14 @@ Estilos contacto
 
 */
 
+.titulo__contacto{
+  font-size: 2rem;
+}
+
+
 .form{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: calc(100vh - var(--header) - var(--footer));
 }
@@ -154,7 +167,6 @@ Estilos contacto
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1.5px solid;
   border-radius: 12px;
 }
 
@@ -166,6 +178,18 @@ Estilos contacto
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+.form__input input{
+  height: 50px;
+  width: 460px;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+.form__text{
+  font-size: 1.2rem;
+  padding: 20px 0 0 20px;
 }
 
 .form__boton{
@@ -182,6 +206,10 @@ Estilos contacto
   cursor: pointer;
 }
 
+.img__contacto{
+  width: 500px;
+  height: 500px;
+} 
 
 
 .footer{

@@ -6,31 +6,32 @@ Contacto
 
 {% block content %}
 
+
+
+
 <form action="" class="form">
   <div class="form__contacto">
+    <div class="titulo__contacto">
+      <h3>Contactanos...</h3>
+    </div>
     <div class="form__input">
-      <label for="nombre" class="form__label">Nombre</label>
-      <input type="text" name="nombre">
+      <label for="nombre" class="form__label"></label>
+      <input type="text" name="nombre" placeholder="Ingresa tu nombre...">
     </div>
 
     <div class="form__input">
-      <label for="telefono" class="form__label">Apellido</label>
-      <input type="text" name="apellido">
+      <label for="telefono" class="form__label"></label>
+      <input type="tel" name="telefono" placeholder="Ingresa tu telefono...">
     </div>
 
     <div class="form__input">
-      <label for="telefono" class="form__label">Telefono</label>
-      <input type="tel" name="telefono">
+      <label for="email" class="form__label"></label>
+      <input type="email" name="email" placeholder="Ingresa tu Email...">
     </div>
 
     <div class="form__input">
-      <label for="email" class="form__label">Correo electronico</label>
-      <input type="email" name="email">
-    </div>
-
-    <div class="form__input">
-      <label for="descripcion" class="form__label">¿Por qué nos contactas?</label>
-      <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Breve descripcion..."></textarea>
+      <label for="descripcion" class="form__label"></label>
+      <textarea name="descripcion" class="form__text" id="" cols="30" rows="10" placeholder="Deja tu mensaje..."></textarea>
     </div>
 
     <div class="form__boton">
@@ -38,7 +39,9 @@ Contacto
     </div>
   </div>
 
-
-
+  <div class="img--contacto">
+    <img src="{% static 'images/Forms-pana.png' %}" alt="" class="img__contacto">
+  </div>
 </form>
+
 {% endblock %}
