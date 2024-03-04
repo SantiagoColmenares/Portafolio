@@ -111,23 +111,21 @@ Estilos portafolio
 
 */
 
-.portafolio{
+.portafolio {
   max-width: 1250px;
   margin: 0 auto;
   height: calc(100vh - var(--header) - var(--footer));
 }
 
-
-.titulo__portafolio{
+.titulo__portafolio {
   text-align: center;
 }
 
-.images{
+.images {
   display: flex;
   flex-flow: row wrap;
   margin-top: 35px;
-  gap: .5rem;
-
+  gap: 0.5rem;
 }
 
 .imagenes__portafolio{
@@ -135,6 +133,8 @@ Estilos portafolio
   height: 300px;
   
 }
+
+
 
 
 /* 
@@ -196,3 +196,7 @@ Estilos contacto
   font-size: 1.8rem;
   color: var(--text-color-footer);
 }
+
+
+
+
